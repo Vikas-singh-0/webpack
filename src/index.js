@@ -1,8 +1,9 @@
+import {join} from 'lodash';
 
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = ''.concat('Hello', 'Webpack')
+  element.innerHTML = join(['Hello', 'Webpack'])
 
   return element;
 }
